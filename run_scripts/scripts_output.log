@@ -1,0 +1,64 @@
+Function called....... 
+Element found and clickable
+{'Date': '2024-06-09 09:52:36.221947', 'Strike_Price': 24000.0, 'Call_Current_Change': 108921, 'Call_Open_Interest': 366010, 'Call_Bid_Ask_Analysis': 'Choppy', 'Call_Volume': 3985744, 'Call_Total_Volume': 42491389, 'PCR': 1.098286471404135, 'Put_Current_Change': 186965, 'Put_Open_Interest': 224841, 'Put_Bid_Ask_Analysis': 'Choppy', 'Put_Volume': 2822486, 'Put_Total_Volume': 32349146}
+data dump successfully.....
+Function called....... 
+Element found and clickable
+Traceback (most recent call last):
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 95, in <module>
+    recursive_function()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 92, in recursive_function
+    recursive_function()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 87, in recursive_function
+    GetCSVDataFromNSE()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 17, in __init__
+    self.data = self.output_data()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 68, in output_data
+    response = AnalyseCSVData(self.download_path)
+  File "D:\IndexDataAnalysisAutomation\AnalyseNSEData.py", line 11, in __init__
+    file = [file for file in files if 'option-chain' in file and str(file).endswith('.csv')][0]
+IndexError: list index out of range
+Function called....... 
+Element found and clickable
+Traceback (most recent call last):
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 95, in <module>
+    recursive_function()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 87, in recursive_function
+    GetCSVDataFromNSE()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 17, in __init__
+    self.data = self.output_data()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 68, in output_data
+    response = AnalyseCSVData(self.download_path)
+  File "D:\IndexDataAnalysisAutomation\AnalyseNSEData.py", line 11, in __init__
+    file = [file for file in files if 'option-chain' in file and str(file).endswith('.csv')][0]
+IndexError: list index out of range
+Function called....... 
+Element found and clickable
+{'Date': '2024-06-09 10:19:14.529901', 'Strike_Price': 24000.0, 'Call_Current_Change': 108921, 'Call_Open_Interest': 366010, 'Call_Bid_Ask_Analysis': 'Choppy', 'Call_Volume': 3985744, 'Call_Total_Volume': 42491389, 'PCR': 1.098286471404135, 'Put_Current_Change': 186965, 'Put_Open_Interest': 224841, 'Put_Bid_Ask_Analysis': 'Choppy', 'Put_Volume': 2822486, 'Put_Total_Volume': 32349146}
+data dump successfully.....
+Function called....... 
+Element found and clickable
+{'Date': '2024-06-09 10:22:06.858502', 'Strike_Price': 24000.0, 'Call_Current_Change': 108921, 'Call_Open_Interest': 366010, 'Call_Bid_Ask_Analysis': 'Choppy', 'Call_Volume': 3985744, 'Call_Total_Volume': 42491389, 'PCR': 1.098286471404135, 'Put_Current_Change': 186965, 'Put_Open_Interest': 224841, 'Put_Bid_Ask_Analysis': 'Choppy', 'Put_Volume': 2822486, 'Put_Total_Volume': 32349146}
+data dump successfully.....
+Function called....... 
+Element found and clickable
+Traceback (most recent call last):
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 95, in <module>
+    recursive_function()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 92, in recursive_function
+    recursive_function()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 92, in recursive_function
+    recursive_function()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 87, in recursive_function
+    GetCSVDataFromNSE()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 17, in __init__
+    self.data = self.output_data()
+  File "D:\IndexDataAnalysisAutomation\DownloadNSEData.py", line 68, in output_data
+    response = AnalyseCSVData(self.download_path)
+  File "D:\IndexDataAnalysisAutomation\AnalyseNSEData.py", line 17, in __init__
+    self.PCR_value = self.calculatePCR()
+  File "D:\IndexDataAnalysisAutomation\AnalyseNSEData.py", line 45, in calculatePCR
+    calls_oi = self.sum_column_data(self.calls_data, 'OI')
+  File "D:\IndexDataAnalysisAutomation\AnalyseNSEData.py", line 63, in sum_column_data
+    return column_numeric.sum()
+AttributeError: 'int' object has no attribute 'sum'
